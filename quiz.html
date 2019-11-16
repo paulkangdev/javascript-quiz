@@ -18,51 +18,43 @@
             </nav>
      -->
     <section id="main" class="container">
-        
-        
-        <section class="wrapper display-wrapper">
+        <section class="display-wrapper">
             <h1 class="quiz-title">JavaScript Quiz of Wonders!</h1>
-            <div class="question-wrapper">
-                <div class="question-display"></div>
-                <div class="banner wrong"></div>
-                <div class="banner correct"></div>
+            <table class="statistics-panel">
+                <tr>
+                    <th>Score:</th>
+                    <td id="player-score" class="player-score"></td>
+                </tr>
+                <tr>
+                    <th>Correct:</th>
+                    <td id="questions-right" class="questions-right"></td>
+                </tr>
+                <tr>
+                    <th>Wrong:</th> 
+                    <td id="questions-wrong" class="questions-wrong"></td>
+                </tr>
+            </table>
+            
+            
+        </section>
 
-        </div>
-        </section>
-        <section class="wrapper answers-wrapper">
-            <ol>
-                <div class="answer-splitter">
-                    <li class="answer-a"></li>
-                    <li class="answer-b"></li>
-                </div>
-                <div class="answer-splitter">
-                    <li class="answer-c"></li>
-                    <li class="answer-d"></li>
-                </div>
-            </ol>
-        </section>
-    
-        <section class="wrapper statistics-wrapper">
-            <ol class="statistics-panel">
-                <li><h1>Total Score</h1> <span class="player-score"></span></li>
-                <li><h1>Questions Right</h1> <span class="questions-right">0</span> out of <span class="total-questions">3</span></li>
-                <li><h1>Wrong Answers</h1> <span class="questions-wrong"></span></li>
-            </ol>
-            <button class="questions-remaining">Next Question</button>
+        <section class="answers-wrapper">
+            <div class="question-display"></div>
+            <div class="banner-wrong"></div>
+            <div class="banner-correct"></div>
+            <!-- <div class="correct-banner">
+                <p>Correct Answer!</p>
+                Score: +50
+                <div class='next-button'>Next</div>  
+            </div> -->
+            <button type="button" class="answer-a"></button>
+            <button type="button" class="answer-b"></button>
+            <button type="button" class="answer-c"></button>
+            <button type="button" class="answer-d"></button>
         </section>
     </section>
     <footer>
-        <div class="footer-container">
-            <div class="footer-column">Sweet Logo Will Go Here</div>
-            <div class="footer-column">
-                <ul>    
-                    <li>Latest News</li> 
-                    <li>Careers</li> 
-                    <li>Other Text Link Stuff</li>
-                </ul></div>
-            <div class="footer-column"> Third Column</div>    
-            
-        </div>
+        
     </footer>
     <script src="js/quiz.js"></script>
 </body>
